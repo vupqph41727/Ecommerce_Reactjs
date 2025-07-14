@@ -1,94 +1,85 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Nike Air Zoom - Quần",
-            "price": 1200000,
-            "brandId": 1,
-            "categoryId": 2,
-            "description": "Quần thể thao nam"
-        },
-        {
-            "id": 2,
-            "name": "Nike Air Zoom - Áo",
-            "price": 1200000,
-            "brandId": 1,
-            "categoryId": 1,
-            "description": "Áo thể thao nam"
-        },
-        {
-            "id": 3,
-            "name": "Nike Air Zoom - Vợt",
-            "price": 1200000,
-            "brandId": 1,
-            "categoryId": 3,
-            "description": "Vợt thể thao nam"
-        },
-        {
-            "id": 4,
-            "name": "Nike Air Zoom - Bóng",
-            "price": 1200000,
-            "brandId": 1,
-            "categoryId": 3,
-            "description": "Bóng thể thao nam"
-        },
-        {
-            "id": 5,
-            "name": "Nike Air Zoom - Băng",
-            "price": 1200000,
-            "brandId": 1,
-            "categoryId": 4,
-            "description": "Băng thể thao nam"
-        },
-        {
-            "id": 6,
-            "name": "Nike Air Zoom - ABC",
-            "price": 1200000,
-            "brandId": 1,
-            "categoryId": 4,
-            "description": "Abc thể thao nam"
-        }
-    ],
-    "categories": [
-        {
-            "id": 1,
-            "name": "Áo"
-        },
-        {
-            "id": 2,
-            "name": "Quần"
-        },
-        {
-            "id": 3,
-            "name": "Dụng cụ"
-        },
-        {
-            "id": 4,
-            "name": "Phụ kiện"
-        }
-    ],
-    "brands": [
-        {
-            "id": 1,
-            "name": "Nike"
-        },
-        {
-            "id": 2,
-            "name": "Adidas"
-        }
-    ],
-    "users": [
-        {
-            "id": 1,
-            "username": "admin",
-            "password": "123456",
-            "role": "admin"
-        },
-        {
-            "id": 2,
-            "username": "user",
-            "password": "123456",
-            "role": "user"
-        }
-    ]
+  "products": [
+    {
+      "name": "Nike Air Zoom - Quần",
+      "price": 1200000,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Nike Air Zoom - Áo",
+      "price": 1200000,
+      "brandId": 1,
+      "categoryId": 1,
+      "description": "Áo thể thao nam"
+    },
+    {
+      "id": "3",
+      "name": "Nike Air Zoom - Vợt",
+      "price": 1200000,
+      "brandId": 1,
+      "categoryId": 3,
+      "description": "Vợt thể thao nam"
+    },
+    {
+      "id": "4",
+      "name": "Nike Air Zoom - Bóng",
+      "price": 1200000,
+      "brandId": 1,
+      "categoryId": 3,
+      "description": "Bóng thể thao nam"
+    },
+    {
+      "id": "5c78",
+      "name": "Adidas áo",
+      "price": 12000000
+    },
+    {
+      "name": "áo puma 1",
+      "price": 1123456789,
+      "id": "e687"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Áo"
+    },
+    {
+      "id": "2",
+      "name": "Quần"
+    },
+    {
+      "id": "3",
+      "name": "Dụng cụ"
+    },
+    {
+      "id": "4",
+      "name": "Phụ kiện"
+    }
+  ],
+  "brands": [
+    {
+      "id": "1",
+      "name": "Nike"
+    },
+    {
+      "id": "2",
+      "name": "Adidas"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "123456",
+      "role": "user"
+    }
+  ]
 }
