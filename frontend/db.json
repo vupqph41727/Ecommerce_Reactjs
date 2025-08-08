@@ -79,15 +79,21 @@
   "users": [
     {
       "id": "1",
-      "username": "admin",
+      "email": "admin@gmail.com",
       "password": "123456",
       "role": "admin"
     },
     {
       "id": "2",
-      "username": "user",
+      "email": "client@gmail.com",
       "password": "123456",
-      "role": "user"
+      "role": "client"
+    },
+    {
+      "id": "4788",
+      "email": "phamquangvu@gmail.com",
+      "password": "123",
+      "role": "client"
     }
   ]
 }

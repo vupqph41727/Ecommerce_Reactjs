@@ -9,7 +9,7 @@ interface Brand {
 }
 
 const BrandsPage = () => {
-  const { data: brands = [], refetch } = useQuery<Brand[]>({
+  const { data: brands = [], refetch  } = useQuery<Brand[]>({
     queryKey: ['brands'],
     queryFn: async () => {
       const res = await axios.get('http://localhost:3001/brands');
@@ -20,12 +20,12 @@ const BrandsPage = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [form] = Form.useForm();
   const [editingBrand, setEditingBrand] = useState<Brand | null>(null);
-
   const columns = [
-    { title: 'Name', dataIndex: 'name', key: 'name' },
+    { title: 'Name', dataIndex: 'name', key: 'name' }, 
     {
       title: 'Action',
       key: 'action',
+      
       render: (_: unknown, record: Brand) => (
         <>
           <Button type="link" onClick={() => showEditModal(record)}>Edit</Button>
@@ -38,6 +38,7 @@ const BrandsPage = () => {
   const showEditModal = (brand?: Brand) => {
     setEditingBrand(brand || null);
     setIsModalVisible(true);
+    
     if (brand) form.setFieldsValue(brand);
     else form.resetFields();
   };
@@ -47,6 +48,7 @@ const BrandsPage = () => {
     setEditingBrand(null);
   };
 
+ 
   const handleFinish = async (values: Omit<Brand, 'id'>) => {
     if (editingBrand) {
       await axios.put(`http://localhost:3001/brands/${editingBrand.id}`, values);

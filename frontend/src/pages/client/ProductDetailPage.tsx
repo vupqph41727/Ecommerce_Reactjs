@@ -18,7 +18,7 @@ const ProductDetailPage = () => {
       <p>Giá: {product.price} VNĐ</p>
       <p>{product.description}</p>
     </div>
-  ) : <p>Đang tải...</p>;
+  ) : <p>Waiting please, We are having issue</p>;
 };
 
 export default ProductDetailPage;

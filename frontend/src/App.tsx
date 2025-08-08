@@ -11,6 +11,7 @@ import HomePage from './pages/client/HomePage';
 import ProductDetailPage from './pages/client/ProductDetailPage';
 import LoginPage from './pages/auth/LoginPage';
 import RegisterPage from './pages/auth/RegisterPage';
+import PrivateRoute from './component/PrivateRoute';
 
 function App() {
  
@@ -20,12 +21,16 @@ function App() {
      <Router>
       <Routes>
         {/* Admin Routes */}
-        <Route path="/admin" element={<AdminLayout />}>
-          <Route path="products" element={<ProductsPage />} />
-          <Route path="categories" element={<CategoriesPage />} />
-          <Route path="brands" element={<BrandsPage />} />
-          <Route path="users" element={<UsersPage />} />
-        </Route>
+        <Route path="/admin" element={
+  <PrivateRoute role="admin">
+    <AdminLayout />
+  </PrivateRoute>
+}>
+  <Route path="products" element={<ProductsPage />} />
+  <Route path="categories" element={<CategoriesPage />} />
+  <Route path="brands" element={<BrandsPage />} />
+  <Route path="users" element={<UsersPage />} />
+</Route>
 
         {/* Client Routes */}
         <Route path="/" element={<ClientLayout />}>
